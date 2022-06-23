@@ -16,6 +16,12 @@
 		E0352EAB2862286E00F11E10 /* MarvelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352EAA2862286E00F11E10 /* MarvelTests.swift */; };
 		E0352EB52862286E00F11E10 /* MarvelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352EB42862286E00F11E10 /* MarvelUITests.swift */; };
 		E0352EB72862286E00F11E10 /* MarvelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352EB62862286E00F11E10 /* MarvelUITestsLaunchTests.swift */; };
+		E0352ECE28622A7800F11E10 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352ECD28622A7800F11E10 /* HomeInteractor.swift */; };
+		E0352ED128622AB800F11E10 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352ED028622AB800F11E10 /* HomePresenter.swift */; };
+		E0352ED428622AEB00F11E10 /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352ED328622AEB00F11E10 /* HomeEntity.swift */; };
+		E0352ED728622B4100F11E10 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352ED628622B4100F11E10 /* HomeRouter.swift */; };
+		E0352ED928622BA500F11E10 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352ED828622BA500F11E10 /* HomeViewController.swift */; };
+		E0352EDD2862478000F11E10 /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352EDC2862478000F11E10 /* CharacterCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		E0352EB02862286E00F11E10 /* MarvelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0352EB42862286E00F11E10 /* MarvelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelUITests.swift; sourceTree = "<group>"; };
 		E0352EB62862286E00F11E10 /* MarvelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E0352ECD28622A7800F11E10 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		E0352ED028622AB800F11E10 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		E0352ED328622AEB00F11E10 /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
+		E0352ED628622B4100F11E10 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		E0352ED828622BA500F11E10 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E0352EDC2862478000F11E10 /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,7 @@
 		E0352E922862286A00F11E10 /* Marvel */ = {
 			isa = PBXGroup;
 			children = (
+				E0352EC52862291700F11E10 /* Presentation */,
 				E0352E932862286A00F11E10 /* AppDelegate.swift */,
 				E0352E952862286A00F11E10 /* SceneDelegate.swift */,
 				E0352E972862286A00F11E10 /* ViewController.swift */,
@@ -125,6 +138,75 @@
 				E0352EB62862286E00F11E10 /* MarvelUITestsLaunchTests.swift */,
 			);
 			path = MarvelUITests;
+			sourceTree = "<group>";
+		};
+		E0352EC52862291700F11E10 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E0352EC62862296B00F11E10 /* Home */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		E0352EC62862296B00F11E10 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E0352ECC28622A2700F11E10 /* View */,
+				E0352ECA286229D100F11E10 /* Interactor */,
+				E0352ECF28622A9400F11E10 /* Presenter */,
+				E0352ECB286229E600F11E10 /* Entities */,
+				E0352ED528622B0900F11E10 /* Router */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E0352ECA286229D100F11E10 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E0352ECD28622A7800F11E10 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E0352ECB286229E600F11E10 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E0352ED328622AEB00F11E10 /* HomeEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E0352ECC28622A2700F11E10 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0352EDA2862475E00F11E10 /* Cell */,
+				E0352ED828622BA500F11E10 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E0352ECF28622A9400F11E10 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E0352ED028622AB800F11E10 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E0352ED528622B0900F11E10 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E0352ED628622B4100F11E10 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E0352EDA2862475E00F11E10 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E0352EDC2862478000F11E10 /* CharacterCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +342,13 @@
 			files = (
 				E0352E982862286A00F11E10 /* ViewController.swift in Sources */,
 				E0352E942862286A00F11E10 /* AppDelegate.swift in Sources */,
+				E0352ED728622B4100F11E10 /* HomeRouter.swift in Sources */,
+				E0352EDD2862478000F11E10 /* CharacterCollectionViewCell.swift in Sources */,
+				E0352ED928622BA500F11E10 /* HomeViewController.swift in Sources */,
+				E0352ED428622AEB00F11E10 /* HomeEntity.swift in Sources */,
 				E0352E962862286A00F11E10 /* SceneDelegate.swift in Sources */,
+				E0352ED128622AB800F11E10 /* HomePresenter.swift in Sources */,
+				E0352ECE28622A7800F11E10 /* HomeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +533,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -456,7 +545,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -473,6 +562,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -484,7 +574,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
