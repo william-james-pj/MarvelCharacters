@@ -8,18 +8,22 @@
 import Foundation
 import CryptoKit
 
-protocol AnyInteractor {
-    var presenter: AnyPresenter? { get set }
+protocol HomeInteractorInterface: InteractorInterface {
+    var presenter: HomePresenterInterface? { get set }
     
     func getCharacters()
     func getCharactersByName(_ name: String, offset: Int, isByOffset: Bool)
     func getCharactersByOffset(_ offset: Int)
 }
 
-class HomeInteractor: AnyInteractor {
-    var presenter: AnyPresenter?
+class HomeInteractor: HomeInteractorInterface {
+    // MARK: - Constrants
     fileprivate let urlBase = "https://gateway.marvel.com:443/v1/public/characters?"
     
+    // MARK: - Variables
+    var presenter: HomePresenterInterface?
+    
+    // MARK: - Methods
     func getCharacters() {
         let (ts, publicKey, hash) = getParameters()
         

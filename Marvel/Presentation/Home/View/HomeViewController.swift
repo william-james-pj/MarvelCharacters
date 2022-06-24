@@ -7,19 +7,19 @@
 
 import UIKit
 
-protocol AnyView {
-    var presenter: AnyPresenter? { get set }
+protocol HomeViewInterface: ViewInterface {
+    var presenter: HomePresenterInterface? { get set }
     
     func update(with dataContainer: CharacterDataContainer, isByOffset: Bool)
     func setLoading(to isLoading: Bool)
 }
 
-class HomeViewController: UIViewController, AnyView {
+class HomeViewController: UIViewController, HomeViewInterface {
     // MARK: - Constrants
     fileprivate let resuseIdentifierCharacter = "CharacterCollectionViewCell"
     
     // MARK: - Variables
-    var presenter: AnyPresenter?
+    var presenter: HomePresenterInterface?
     var characters: [MavelCharacter] = []
     
     // MARK: - Components
@@ -204,19 +204,5 @@ extension HomeViewController: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         guard let str = textField.text else { return }
         self.presenter?.seachText.send(str)
-    }
-}
-
-// MARK: - extension UITextField
-extension UITextField {
-    func setLeftPaddingPoints(_ amount:CGFloat){
-        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.size.height))
-        self.leftView = paddingView
-        self.leftViewMode = .always
-    }
-    func setRightPaddingPoints(_ amount:CGFloat) {
-        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.size.height))
-        self.rightView = paddingView
-        self.rightViewMode = .always
     }
 }

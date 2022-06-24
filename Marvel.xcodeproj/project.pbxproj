@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0220F9C2865E44600BE42FA /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0220F9B2865E44600BE42FA /* InteractorInterface.swift */; };
+		E0220F9F2865E46500BE42FA /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0220F9E2865E46500BE42FA /* PresenterInterface.swift */; };
+		E0220FA12865E47F00BE42FA /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0220FA02865E47F00BE42FA /* ViewInterface.swift */; };
+		E0220FA32865E4C500BE42FA /* WireframeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0220FA22865E4C500BE42FA /* WireframeInterface.swift */; };
+		E0220FA62865E72400BE42FA /* UITextField+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0220FA52865E72400BE42FA /* UITextField+extension.swift */; };
+		E0220FA82865E77D00BE42FA /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0220FA72865E77D00BE42FA /* UIViewController+extension.swift */; };
+		E0220FAA2865E88400BE42FA /* UINavigationController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0220FA92865E88400BE42FA /* UINavigationController+extension.swift */; };
+		E0220FB02865F4D900BE42FA /* SeeCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0220FAF2865F4D900BE42FA /* SeeCharacterViewController.swift */; };
+		E0220FB42865F51B00BE42FA /* SeeCharacterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0220FB32865F51B00BE42FA /* SeeCharacterRouter.swift */; };
+		E0220FB72865F6CC00BE42FA /* SeeCharacterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0220FB62865F6CC00BE42FA /* SeeCharacterPresenter.swift */; };
 		E0352E942862286A00F11E10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352E932862286A00F11E10 /* AppDelegate.swift */; };
 		E0352E962862286A00F11E10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352E952862286A00F11E10 /* SceneDelegate.swift */; };
 		E0352E982862286A00F11E10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352E972862286A00F11E10 /* ViewController.swift */; };
@@ -19,7 +29,7 @@
 		E0352ECE28622A7800F11E10 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352ECD28622A7800F11E10 /* HomeInteractor.swift */; };
 		E0352ED128622AB800F11E10 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352ED028622AB800F11E10 /* HomePresenter.swift */; };
 		E0352ED428622AEB00F11E10 /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352ED328622AEB00F11E10 /* HomeEntity.swift */; };
-		E0352ED728622B4100F11E10 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352ED628622B4100F11E10 /* HomeRouter.swift */; };
+		E0352ED728622B4100F11E10 /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352ED628622B4100F11E10 /* HomeWireframe.swift */; };
 		E0352ED928622BA500F11E10 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352ED828622BA500F11E10 /* HomeViewController.swift */; };
 		E0352EDD2862478000F11E10 /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352EDC2862478000F11E10 /* CharacterCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +52,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E0220F9B2865E44600BE42FA /* InteractorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
+		E0220F9E2865E46500BE42FA /* PresenterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
+		E0220FA02865E47F00BE42FA /* ViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
+		E0220FA22865E4C500BE42FA /* WireframeInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireframeInterface.swift; sourceTree = "<group>"; };
+		E0220FA52865E72400BE42FA /* UITextField+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+extension.swift"; sourceTree = "<group>"; };
+		E0220FA72865E77D00BE42FA /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
+		E0220FA92865E88400BE42FA /* UINavigationController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+extension.swift"; sourceTree = "<group>"; };
+		E0220FAF2865F4D900BE42FA /* SeeCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeCharacterViewController.swift; sourceTree = "<group>"; };
+		E0220FB32865F51B00BE42FA /* SeeCharacterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeCharacterRouter.swift; sourceTree = "<group>"; };
+		E0220FB62865F6CC00BE42FA /* SeeCharacterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeCharacterPresenter.swift; sourceTree = "<group>"; };
 		E0352E902862286A00F11E10 /* Marvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0352E932862286A00F11E10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0352E952862286A00F11E10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +78,7 @@
 		E0352ECD28622A7800F11E10 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		E0352ED028622AB800F11E10 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		E0352ED328622AEB00F11E10 /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
-		E0352ED628622B4100F11E10 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		E0352ED628622B4100F11E10 /* HomeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
 		E0352ED828622BA500F11E10 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E0352EDC2862478000F11E10 /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +108,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E0220F992865E42200BE42FA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E0220FA42865E62900BE42FA /* Extensions */,
+				E0220F9A2865E42C00BE42FA /* Interface */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E0220F9A2865E42C00BE42FA /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E0220FA02865E47F00BE42FA /* ViewInterface.swift */,
+				E0220F9B2865E44600BE42FA /* InteractorInterface.swift */,
+				E0220F9E2865E46500BE42FA /* PresenterInterface.swift */,
+				E0220FA22865E4C500BE42FA /* WireframeInterface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		E0220FA42865E62900BE42FA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E0220FA52865E72400BE42FA /* UITextField+extension.swift */,
+				E0220FA72865E77D00BE42FA /* UIViewController+extension.swift */,
+				E0220FA92865E88400BE42FA /* UINavigationController+extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E0220FAB2865F16D00BE42FA /* SeeCharacter */ = {
+			isa = PBXGroup;
+			children = (
+				E0220FAE2865F19F00BE42FA /* View */,
+				E0220FB52865F68A00BE42FA /* Presenter */,
+				E0220FAC2865F17A00BE42FA /* Router */,
+			);
+			path = SeeCharacter;
+			sourceTree = "<group>";
+		};
+		E0220FAC2865F17A00BE42FA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E0220FB32865F51B00BE42FA /* SeeCharacterRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E0220FAE2865F19F00BE42FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0220FAF2865F4D900BE42FA /* SeeCharacterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E0220FB52865F68A00BE42FA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E0220FB62865F6CC00BE42FA /* SeeCharacterPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		E0352E872862286A00F11E10 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +195,7 @@
 		E0352E922862286A00F11E10 /* Marvel */ = {
 			isa = PBXGroup;
 			children = (
+				E0220F992865E42200BE42FA /* Common */,
 				E0352EC52862291700F11E10 /* Presentation */,
 				E0352E932862286A00F11E10 /* AppDelegate.swift */,
 				E0352E952862286A00F11E10 /* SceneDelegate.swift */,
@@ -143,6 +228,7 @@
 		E0352EC52862291700F11E10 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				E0220FAB2865F16D00BE42FA /* SeeCharacter */,
 				E0352EC62862296B00F11E10 /* Home */,
 			);
 			path = Presentation;
@@ -196,7 +282,7 @@
 		E0352ED528622B0900F11E10 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				E0352ED628622B4100F11E10 /* HomeRouter.swift */,
+				E0352ED628622B4100F11E10 /* HomeWireframe.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -340,14 +426,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0220FB02865F4D900BE42FA /* SeeCharacterViewController.swift in Sources */,
 				E0352E982862286A00F11E10 /* ViewController.swift in Sources */,
 				E0352E942862286A00F11E10 /* AppDelegate.swift in Sources */,
-				E0352ED728622B4100F11E10 /* HomeRouter.swift in Sources */,
+				E0220FB72865F6CC00BE42FA /* SeeCharacterPresenter.swift in Sources */,
+				E0220FB42865F51B00BE42FA /* SeeCharacterRouter.swift in Sources */,
+				E0220FA82865E77D00BE42FA /* UIViewController+extension.swift in Sources */,
+				E0220F9F2865E46500BE42FA /* PresenterInterface.swift in Sources */,
+				E0352ED728622B4100F11E10 /* HomeWireframe.swift in Sources */,
 				E0352EDD2862478000F11E10 /* CharacterCollectionViewCell.swift in Sources */,
+				E0220FA62865E72400BE42FA /* UITextField+extension.swift in Sources */,
 				E0352ED928622BA500F11E10 /* HomeViewController.swift in Sources */,
 				E0352ED428622AEB00F11E10 /* HomeEntity.swift in Sources */,
+				E0220F9C2865E44600BE42FA /* InteractorInterface.swift in Sources */,
 				E0352E962862286A00F11E10 /* SceneDelegate.swift in Sources */,
+				E0220FAA2865E88400BE42FA /* UINavigationController+extension.swift in Sources */,
 				E0352ED128622AB800F11E10 /* HomePresenter.swift in Sources */,
+				E0220FA12865E47F00BE42FA /* ViewInterface.swift in Sources */,
+				E0220FA32865E4C500BE42FA /* WireframeInterface.swift in Sources */,
 				E0352ECE28622A7800F11E10 /* HomeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

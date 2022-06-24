@@ -12,10 +12,10 @@ enum FetchError: Error {
     case failed
 }
 
-protocol AnyPresenter {
-    var router: AnyRouter? { get set }
-    var interactor: AnyInteractor? { get set }
-    var view: AnyView? { get set }
+protocol HomePresenterInterface: PresenterInterface {
+    var router: HomeWireframeInterface? { get set }
+    var interactor: HomeInteractorInterface? { get set }
+    var view: HomeViewInterface? { get set }
     
     var seachText: CurrentValueSubject<String, Never> { get set }
     
@@ -23,14 +23,15 @@ protocol AnyPresenter {
     func interactorDidFetchCharacter(with result: Result<CharacterDataContainer, Error>, isByOffset: Bool)
 }
 
-class HomePresenter: AnyPresenter {
-    var router: AnyRouter?
-    var interactor: AnyInteractor? {
+class HomePresenter: HomePresenterInterface {
+    // MARK: - Variables
+    var router: HomeWireframeInterface?
+    var interactor: HomeInteractorInterface? {
         didSet {
             interactor?.getCharacters()
         }
     }
-    var view: AnyView?
+    var view: HomeViewInterface?
     
     var offSet = 0
     var limit = 20
@@ -40,6 +41,7 @@ class HomePresenter: AnyPresenter {
     var seachText = CurrentValueSubject<String, Never>("")
     var seachtCancellable: AnyCancellable? = nil
     
+    // MARK: - Lifecycle
     init () {
         seachtCancellable = seachText
             .removeDuplicates()
@@ -53,6 +55,7 @@ class HomePresenter: AnyPresenter {
             })
     }
     
+    // MARK: - Methods
     func interactorDidFetchCharacter(with result: Result<CharacterDataContainer, Error>, isByOffset: Bool) {
         switch result {
         case .success(let dataContainer):

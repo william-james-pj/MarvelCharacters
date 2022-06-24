@@ -15,8 +15,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        let homeRouter = HomeRouter.start()
-        let initialVC = homeRouter.entry
+        let homeWireframe = HomeWireframe.start()
+        let initialVC = homeWireframe.entry
         
         let window = UIWindow(windowScene: windowScene)
         window.rootViewController = initialVC
