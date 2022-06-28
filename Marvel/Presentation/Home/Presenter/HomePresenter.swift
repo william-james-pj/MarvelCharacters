@@ -13,19 +13,20 @@ enum FetchError: Error {
 }
 
 protocol HomePresenterInterface: PresenterInterface {
-    var router: HomeWireframeInterface? { get set }
+    var wireframe: HomeWireframeInterface? { get set }
     var interactor: HomeInteractorInterface? { get set }
     var view: HomeViewInterface? { get set }
     
     var seachText: CurrentValueSubject<String, Never> { get set }
     
+    func seeCharacter(character: CharacterModel)
     func featchByOffset()
     func interactorDidFetchCharacter(with result: Result<CharacterDataContainer, Error>, isByOffset: Bool)
 }
 
 class HomePresenter: HomePresenterInterface {
     // MARK: - Variables
-    var router: HomeWireframeInterface?
+    var wireframe: HomeWireframeInterface?
     var interactor: HomeInteractorInterface? {
         didSet {
             interactor?.getCharacters()
@@ -56,6 +57,10 @@ class HomePresenter: HomePresenterInterface {
     }
     
     // MARK: - Methods
+    func seeCharacter(character: CharacterModel) {
+        wireframe?.navigateToSeeCharacter(character: character)
+    }
+    
     func interactorDidFetchCharacter(with result: Result<CharacterDataContainer, Error>, isByOffset: Bool) {
         switch result {
         case .success(let dataContainer):

@@ -17,6 +17,7 @@
 		E0220FB02865F4D900BE42FA /* SeeCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0220FAF2865F4D900BE42FA /* SeeCharacterViewController.swift */; };
 		E0220FB42865F51B00BE42FA /* SeeCharacterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0220FB32865F51B00BE42FA /* SeeCharacterRouter.swift */; };
 		E0220FB72865F6CC00BE42FA /* SeeCharacterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0220FB62865F6CC00BE42FA /* SeeCharacterPresenter.swift */; };
+		E0220FBA286601F200BE42FA /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0220FB9286601F200BE42FA /* NavigationController.swift */; };
 		E0352E942862286A00F11E10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352E932862286A00F11E10 /* AppDelegate.swift */; };
 		E0352E962862286A00F11E10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352E952862286A00F11E10 /* SceneDelegate.swift */; };
 		E0352E982862286A00F11E10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352E972862286A00F11E10 /* ViewController.swift */; };
@@ -32,6 +33,11 @@
 		E0352ED728622B4100F11E10 /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352ED628622B4100F11E10 /* HomeWireframe.swift */; };
 		E0352ED928622BA500F11E10 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352ED828622BA500F11E10 /* HomeViewController.swift */; };
 		E0352EDD2862478000F11E10 /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0352EDC2862478000F11E10 /* CharacterCollectionViewCell.swift */; };
+		E0C9C5B7286A203F0009A225 /* SeeCharacterEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C9C5B6286A203F0009A225 /* SeeCharacterEntities.swift */; };
+		E0C9C5BA286A210C0009A225 /* SeeCharacterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C9C5B9286A210C0009A225 /* SeeCharacterInteractor.swift */; };
+		E0DA5777286897B1003FBA7B /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DA5776286897B1003FBA7B /* HeaderCollectionReusableView.swift */; };
+		E0DA577928689862003FBA7B /* SeeCharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DA577828689862003FBA7B /* SeeCharacterCollectionViewCell.swift */; };
+		E0DA577B28689A06003FBA7B /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DA577A28689A06003FBA7B /* ContentCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +68,7 @@
 		E0220FAF2865F4D900BE42FA /* SeeCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeCharacterViewController.swift; sourceTree = "<group>"; };
 		E0220FB32865F51B00BE42FA /* SeeCharacterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeCharacterRouter.swift; sourceTree = "<group>"; };
 		E0220FB62865F6CC00BE42FA /* SeeCharacterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeCharacterPresenter.swift; sourceTree = "<group>"; };
+		E0220FB9286601F200BE42FA /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		E0352E902862286A00F11E10 /* Marvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0352E932862286A00F11E10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0352E952862286A00F11E10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +88,11 @@
 		E0352ED628622B4100F11E10 /* HomeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
 		E0352ED828622BA500F11E10 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E0352EDC2862478000F11E10 /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
+		E0C9C5B6286A203F0009A225 /* SeeCharacterEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeCharacterEntities.swift; sourceTree = "<group>"; };
+		E0C9C5B9286A210C0009A225 /* SeeCharacterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeCharacterInteractor.swift; sourceTree = "<group>"; };
+		E0DA5776286897B1003FBA7B /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		E0DA577828689862003FBA7B /* SeeCharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeCharacterCollectionViewCell.swift; sourceTree = "<group>"; };
+		E0DA577A28689A06003FBA7B /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +123,7 @@
 		E0220F992865E42200BE42FA /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E0220FB8286601E200BE42FA /* Navigation */,
 				E0220FA42865E62900BE42FA /* Extensions */,
 				E0220F9A2865E42C00BE42FA /* Interface */,
 			);
@@ -142,7 +155,9 @@
 			isa = PBXGroup;
 			children = (
 				E0220FAE2865F19F00BE42FA /* View */,
+				E0C9C5B8286A20EA0009A225 /* Interactor */,
 				E0220FB52865F68A00BE42FA /* Presenter */,
+				E0C9C5B5286A1FFF0009A225 /* Entities */,
 				E0220FAC2865F17A00BE42FA /* Router */,
 			);
 			path = SeeCharacter;
@@ -159,6 +174,7 @@
 		E0220FAE2865F19F00BE42FA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E0220FBB2866210700BE42FA /* Cell */,
 				E0220FAF2865F4D900BE42FA /* SeeCharacterViewController.swift */,
 			);
 			path = View;
@@ -170,6 +186,24 @@
 				E0220FB62865F6CC00BE42FA /* SeeCharacterPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E0220FB8286601E200BE42FA /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				E0220FB9286601F200BE42FA /* NavigationController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		E0220FBB2866210700BE42FA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E0DA5776286897B1003FBA7B /* HeaderCollectionReusableView.swift */,
+				E0DA577828689862003FBA7B /* SeeCharacterCollectionViewCell.swift */,
+				E0DA577A28689A06003FBA7B /* ContentCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		E0352E872862286A00F11E10 = {
@@ -293,6 +327,22 @@
 				E0352EDC2862478000F11E10 /* CharacterCollectionViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		E0C9C5B5286A1FFF0009A225 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E0C9C5B6286A203F0009A225 /* SeeCharacterEntities.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E0C9C5B8286A20EA0009A225 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E0C9C5B9286A210C0009A225 /* SeeCharacterInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,20 +480,26 @@
 				E0352E982862286A00F11E10 /* ViewController.swift in Sources */,
 				E0352E942862286A00F11E10 /* AppDelegate.swift in Sources */,
 				E0220FB72865F6CC00BE42FA /* SeeCharacterPresenter.swift in Sources */,
+				E0C9C5B7286A203F0009A225 /* SeeCharacterEntities.swift in Sources */,
 				E0220FB42865F51B00BE42FA /* SeeCharacterRouter.swift in Sources */,
 				E0220FA82865E77D00BE42FA /* UIViewController+extension.swift in Sources */,
 				E0220F9F2865E46500BE42FA /* PresenterInterface.swift in Sources */,
 				E0352ED728622B4100F11E10 /* HomeWireframe.swift in Sources */,
 				E0352EDD2862478000F11E10 /* CharacterCollectionViewCell.swift in Sources */,
+				E0DA577B28689A06003FBA7B /* ContentCollectionViewCell.swift in Sources */,
 				E0220FA62865E72400BE42FA /* UITextField+extension.swift in Sources */,
 				E0352ED928622BA500F11E10 /* HomeViewController.swift in Sources */,
+				E0DA5777286897B1003FBA7B /* HeaderCollectionReusableView.swift in Sources */,
 				E0352ED428622AEB00F11E10 /* HomeEntity.swift in Sources */,
 				E0220F9C2865E44600BE42FA /* InteractorInterface.swift in Sources */,
 				E0352E962862286A00F11E10 /* SceneDelegate.swift in Sources */,
 				E0220FAA2865E88400BE42FA /* UINavigationController+extension.swift in Sources */,
 				E0352ED128622AB800F11E10 /* HomePresenter.swift in Sources */,
 				E0220FA12865E47F00BE42FA /* ViewInterface.swift in Sources */,
+				E0DA577928689862003FBA7B /* SeeCharacterCollectionViewCell.swift in Sources */,
+				E0220FBA286601F200BE42FA /* NavigationController.swift in Sources */,
 				E0220FA32865E4C500BE42FA /* WireframeInterface.swift in Sources */,
+				E0C9C5BA286A210C0009A225 /* SeeCharacterInteractor.swift in Sources */,
 				E0352ECE28622A7800F11E10 /* HomeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

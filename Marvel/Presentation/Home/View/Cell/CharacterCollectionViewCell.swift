@@ -124,7 +124,7 @@ class CharacterCollectionViewCell: UICollectionViewCell {
     }
     
     // MARK: - Methods
-    func configCell(character: MavelCharacter) {
+    func configCell(character: CharacterModel) {
         self.labelTitle.text = character.name
         self.labelDescription.text = character.description
         

@@ -7,17 +7,15 @@
 
 import UIKit
 
-typealias HomeEntryPoint = HomeViewInterface & UIViewController
-
 protocol HomeWireframeInterface: WireframeInterface {
-    var entry: HomeEntryPoint? { get }
-    
     static func start() -> HomeWireframeInterface
+    
+    func navigateToSeeCharacter(character: CharacterModel)
 }
 
 class HomeWireframe: HomeWireframeInterface {
     // MARK: - Variables
-    var entry: HomeEntryPoint?
+    var entry: EntryPoint?
     
     // MARK: - Lifecycle
     static func start() -> HomeWireframeInterface {
@@ -31,12 +29,19 @@ class HomeWireframe: HomeWireframeInterface {
         
         interactor.presenter = presenter
         
-        presenter.router = router
+        presenter.wireframe = router
         presenter.view = view
         presenter.interactor = interactor
         
-        router.entry = view as? HomeEntryPoint
+        router.entry = view as? EntryPoint
         
         return router
+    }
+    
+    func navigateToSeeCharacter(character: CharacterModel) {
+        let seeCharacter = SeeCharacterWireframe.start(character: character)
+        seeCharacter.entry?.modalPresentationStyle = .fullScreen
+        entry?.presentWireframe(seeCharacter, animated: true)
+//        entry?.navigationController?.pushWireframe(seeCharacter)
     }
 }

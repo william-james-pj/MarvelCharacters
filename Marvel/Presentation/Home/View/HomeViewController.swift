@@ -20,7 +20,7 @@ class HomeViewController: UIViewController, HomeViewInterface {
     
     // MARK: - Variables
     var presenter: HomePresenterInterface?
-    var characters: [MavelCharacter] = []
+    var characters: [CharacterModel] = []
     
     // MARK: - Components
     fileprivate let stackBase: UIStackView = {
@@ -80,6 +80,16 @@ class HomeViewController: UIViewController, HomeViewInterface {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupVC()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     // MARK: - Setup
@@ -159,6 +169,10 @@ class HomeViewController: UIViewController, HomeViewInterface {
 
 // MARK: - extension UICollectionViewDelegate
 extension HomeViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.presenter?.seeCharacter(character: self.characters[indexPath.row])
+    }
+    
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if indexPath.row == self.characters.count - 1 {
             self.presenter?.featchByOffset()

@@ -7,5 +7,8 @@
 
 import UIKit
 
+typealias EntryPoint = ViewInterface & UIViewController
+
 protocol WireframeInterface {
+    var entry: EntryPoint? { get }
 }

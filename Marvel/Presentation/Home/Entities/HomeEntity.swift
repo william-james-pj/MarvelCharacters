@@ -16,12 +16,17 @@ struct CharacterDataContainer: Codable {
     let limit: Int
     let count: Int
     let total: Int
-    let results: [MavelCharacter]
+    let results: [CharacterModel]
 }
 
-struct MavelCharacter: Codable {
+struct CharacterModel: Codable {
     let id: Int
     let name: String
     let description: String
     let thumbnail: [String: String]
+    let comics: ComicListModel
+}
+
+struct ComicListModel: Codable {
+    let collectionURI: String
 }
